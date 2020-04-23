@@ -2,53 +2,62 @@
 \numberwithin{equation}{enumi}
 
 \begin{frame}
-   A lead Compensator network includes a parallel combination of R and C in feed-forward path. If the transfer function of compensator  is $$G_c(s) = \frac{s+2}{s+4}$$, the value of RC is ?\\
-   And also find the value of RC for a lead compensator used in previuos example. $$G_c(s) = \frac{3(s+\frac{1}{3})}{s+1}$$
-\begin{center}
-    \input{./figs/figure.tex}
-\end{center}
+   A lead Compensator network includes a parallel combination of R and C in feed-forward path. If the transfer function of compensator  is \begin{align}G_c(s) = \frac{s+2}{s+4}\end{align}, the value of RC is ?\\
+   And also find the value of RC for a lead compensator used in previuos example. \begin{align}G_c(s) = \frac{3(s+\frac{1}{3})}{s+1}\end{align}
+\begin{figure}[!ht]
+    \begin{center}
+    {\input{./figs/figure.tex}}
+    \end{center}
+\caption{}
+\label{fig:ee18btech11005}
+\end{figure}
+
 Solution:\\
 The transfer function for the following circuit is
-    $$
+    \begin{align}
     T(s) = \frac{V_o}{V_i}
-    $$
+    \end{align}
     Let
-    $$
+    \begin{align}
     \alpha = \frac{R_2}{R_1 + R_2}
-    $$
+    \end{align}
     and 
-    $$
+    \begin{align}
     \tau = R_1C
-    $$
+    \end{align}
 
 Now our T(s) is 
-    $$
+    \begin{align}
     T(s) = \frac{R_2}{\frac{\frac{1}{sC}R1}{\frac{1}{sC}+R1} + R2}
-    $$
+    \end{align}
     Simplifying T(s)
-    $$
+    \begin{align}
     T(s) = \frac{s+\frac{1}{\tau}}{s+\frac{1}{\tau\alpha}}
-    $$
+    \end{align}
     Comparing with the given $$G_c(s) = \frac{s+2}{s+4}$$
-    $$
+    \begin{align}
     \tau = R_1C = 0.5
-    $$
+    \end{align}
     for
-    $$
+    \begin{align}
     T(s) = \frac{3(s+\frac{1}{3})}{s+1}
-    $$
+    \end{align}
     here this is a lead compensator with a gain of 3.
     so we can simply write passive circuit part as.
-     $$
+     \begin{align}
     T(s) = \frac{(s+\frac{1}{3})}{s+1}
-    $$
+    \end{align}
     again by comparing with 
-    $$
+    \begin{align}
     T(s) = \frac{s+\frac{1}{\tau}}{s+\frac{1}{\tau\alpha}}
-    $$
+    \end{align}
     
-    $$\tau = 3$$
-    $$RC = 3$$
+    \begin{align}
+    \tau = 3
+    \end{align}
+    \begin{align}
+    RC = 3
+    \end{align}
 \end{frame}
 
 \end{enumerate}

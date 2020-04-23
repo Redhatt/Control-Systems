@@ -3,6 +3,7 @@
 
 \begin{frame}
    A lead Compensator network includes a parallel combination of R and C in feed-forward path. If the transfer function of compensator  is $$G_c(s) = \frac{s+2}{s+4}$$, the value of RC is ?\\
+   and also find the value of RC for a lead compensator used in previuos example. $$G_c(s) = \frac{3(s+\frac{1}{3})}{s+1}$$
 \begin{figure}{t}
     \graphicspath{{./images/}}
     \includegraphics{figs/circuit_lead_compensator.eps}{}
@@ -36,6 +37,22 @@ Now our T(s) is
     $$
     \tau = R_1C = 0.5
     $$
+    for
+    $$
+    T(s) = \frac{3(s+\frac{1}{3})}{s+1}
+    $$
+    here this is a lead compensator with a gain of 3.
+    so we can simply write passive circuit part as.
+     $$
+    T(s) = \frac{(s+\frac{1}{3})}{s+1}
+    $$
+    again by comparing with 
+    $$
+    T(s) = \frac{s+\frac{1}{\tau}}{s+\frac{1}{\tau\alpha}}
+    $$
+    
+    $$\tau = 3$$
+    $$RC = 3$$
 \end{frame}
 
 \end{enumerate}

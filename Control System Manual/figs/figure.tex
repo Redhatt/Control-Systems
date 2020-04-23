@@ -1,0 +1,9 @@
+\begin{figure}
+\begin{circuitikz}[american voltages]
+\draw
+  (0,0) to [short, *-](0.5,0) to [resistor, l=$R$] (3.5,0)
+  (0.5, 0) -- (0.5, 1.5) to [capacitor, *-*, l=$C$] (3.5, 1.5) -- (3.5, 0) -- (4,0) to [resistor,, l=$R_1$] (4,-3) to [short, -*] (0, -3) 
+  (4, 0) to [short, -*] (4.5, 0) 
+  (4, -3) to [short, -*] (4.5, -3);
+  \end{circuitikz}
+\end{figure}
